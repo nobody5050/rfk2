@@ -8,6 +8,11 @@ const config = {
     create: create,
     update: update
   }
+  plugins: {
+        global: [{
+            key: 'rexVirtualJoystick',
+            plugin: VirtualJoystickPlugin,
+            start: true }}
 };
 
 const game = new Phaser.Game(config);
