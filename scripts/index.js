@@ -13,7 +13,8 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  // Runs once, loads up assets like images and audio
+  //joystick setup
+  scene.load.plugin('rexvirtualjoystickplugin', 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js', true);
 }
 
 function create() {
