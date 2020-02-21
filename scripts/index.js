@@ -18,6 +18,8 @@ function preload() {
 }
 
 function create() {
+  //joystick variable
+  var joyStick = scene.plugins.get('rexvirtualjoystickplugin').addPlayer(scene, config);
   // Runs once, after all assets in preload are loaded
 }
 
