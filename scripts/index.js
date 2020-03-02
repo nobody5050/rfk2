@@ -16,7 +16,13 @@ const config = {
         }
     },
 }
-const game = new Phaser.Game(config);
+var game = new Phaser.Game(config);
+ 
+var map;
+var player;
+var cursors;
+var groundLayer, coinLayer;
+var text;
 
 function preload() {
 }
